@@ -1,0 +1,25 @@
+
+  <ul>
+    <% Lists.forEach(function(user){ %>
+    <div class="card">
+      <li>
+        <input
+          type="checkbox"
+          id="<%= user._id %>"
+          name="list"
+          value="<%= user._id %>"
+          class="largerCheckbox"
+          formaction="/user/delete"
+        />
+        <div class="group">
+          <label for=<%= user._id %>> <%= user.Description %></label><br />
+          <span>&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;<span ><%= user.Date%></span></span>
+          <button type="button" class="btn btn-success">
+            <%= user.Description %>
+          </button>
+        </div>
+      </li>
+    </div>
+    <% }); %>
+  </ul>
+  

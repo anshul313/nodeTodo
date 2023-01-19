@@ -1,0 +1,31 @@
+<header>
+   <h1> ToDo App</h1>
+   <form method="post">
+  <div class="main">
+    <input
+      type="text"
+      name="Description"
+      placeholder="Enter description here"
+      class="desc"
+    />
+    <div class="dropdate">
+      <select name="Category" id="cars">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="School">School</option>
+        <option value="Cleaning">Cleaning</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" name="Date" />
+      <br />
+      <br />
+    </div>
+    <button type="submit" class="btn btn-dark" formaction="/user/add">
+      <i class="fa-solid fa-square-plus"></i>&nbsp&nbsp&nbsp&nbsp&nbsp ADD TASK
+    </button>
+    <button type="button" class="btn btn-danger" id="deletebutton">
+      <i class="fa-solid fa-trash-can"></i>&nbsp&nbsp&nbsp&nbsp DELETE TASK
+    </button>
+  </div>
+</form>
+</header>
